@@ -14,6 +14,7 @@ body {
     gap: 10px;
     margin: 20px auto; 
     background-color: rgba(99, 110, 121, 0.205);
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-radius: 10px;
     border: none;
@@ -39,20 +40,21 @@ i {
     margin: 10px;
 }
 #stopwatch {
+    display: inline-block;
     background-color: rgba(99, 110, 121, 0.205);
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-radius: 10px;
     border: none;
-    padding: 0px 8px;
+    padding: 8px 12px;
     width: 20%;
-}
-#stopwatch a {
     text-decoration: none;
     font-family: cursive;
     font-size: 20px;
     text-align: center;
     color: #fff;
 }
+
 #stopwatch:hover {
     background-color: rgba(38, 41, 44, 0.205);
     cursor: pointer;
@@ -68,12 +70,17 @@ i {
     text-align: center;
     color: #fff;
     background-color: rgba(99, 110, 121, 0.205);
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-radius: 10px;
     padding: 5px;
     width: 75%;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+    user-select: none;
+    -webkit-user-select: none;
 }
-#clock{white-space:nowrap}
+#clock{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #date-container {
     display: flex;
     justify-content: center;
@@ -86,6 +93,7 @@ i {
     text-align: center;
     color: #fff;
     background-color: rgba(38, 41, 44, 0.205);
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-radius: 10px;
     padding: 0 8px;
@@ -95,7 +103,7 @@ i {
 @media(max-width:480px){
   #title{font-size:16vw}
   #date{font-size:9vw}
-  #clock{font-size:18vw;width:100%;white-space:nowrap}
+  #clock{font-size:20vw;width:100%;white-space:nowrap}
   #clock-container{margin-top:18vh}
   #stopwatch{width:75%}
   #stopwatch a{font-size:18px}

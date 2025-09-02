@@ -13,6 +13,7 @@ body {
     align-items: center;
     margin: 20px auto; 
     background-color: rgba(99, 110, 121, 0.205);
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-radius: 10px;
     border: none;
@@ -39,20 +40,21 @@ i {
     margin: 10px;
 }
 #clock {
+    display: inline-block;
     background-color: rgba(99, 110, 121, 0.205);
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-radius: 10px;
     border: none;
-    padding: 0px 8px;
+    padding: 8px 12px;
     width: 20%;
-}
-#clock a {
     text-decoration: none;
     font-family: cursive;
     font-size: 20px;
     text-align: center;
     color: #fff;
 }
+
 #clock:hover {
     background-color: rgba(38, 41, 44, 0.205);
     cursor: pointer;
@@ -69,12 +71,17 @@ i {
     text-align: center;
     color: #fff;
     background-color: rgba(99, 110, 121, 0.205);
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-radius: 10px;
     padding: 5px;
     width: 75%;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+    user-select: none;
+    -webkit-user-select: none;
 }
-#stopwatch{white-space:nowrap}
+#stopwatch{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 #stopwatch-controls {
     display: flex;
