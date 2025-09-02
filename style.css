@@ -73,6 +73,7 @@ i {
     padding: 5px;
     width: 75%;
 }
+#clock{white-space:nowrap}
 #date-container {
     display: flex;
     justify-content: center;
@@ -92,10 +93,10 @@ i {
 
 /* Mobile tweaks */
 @media(max-width:480px){
-  #title{font-size:12vw}
-  #date{font-size:6vw}
-  #clock{font-size:18vw;width:95%}
-  #clock-container{margin-top:20vh}
-  #stopwatch{width:70%}
-  #stopwatch a{font-size:16px}
+  #title{font-size:16vw}
+  #date{font-size:9vw}
+  #clock{font-size:20vw;width:100%;white-space:nowrap}
+  #clock-container{margin-top:18vh}
+  #stopwatch{width:75%}
+  #stopwatch a{font-size:18px}
 }

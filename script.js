@@ -8,7 +8,7 @@ function UpdateClock() {
   hours = hours % 12 || 12; // convert to 12-hour format
   hours = hours.toString().padStart(2, '0');
 
-  const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+  const timeString = `${hours}:${minutes}:${seconds}\u00A0${ampm}`;
   document.getElementById('clock').textContent = timeString;
 
   

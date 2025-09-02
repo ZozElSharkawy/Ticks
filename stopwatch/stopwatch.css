@@ -74,6 +74,7 @@ i {
     padding: 5px;
     width: 75%;
 }
+#stopwatch{white-space:nowrap}
 
 #stopwatch-controls {
     display: flex;
@@ -98,9 +99,11 @@ i {
 
 /* Mobile tweaks */
 @media(max-width:480px){
-  #title{font-size:12vw}
-  #stopwatch{font-size:18vw;width:95%}
-  #stopwatch-container{margin-top:20vh}
-  #clock{width:80%}
-  #stopwatch-controls button{padding:8px 12px;font-size:14px}
+  #title{font-size:16vw}
+  #date{font-size:9vw}
+  #stopwatch{font-size:20vw;width:100%;white-space:nowrap}
+  #stopwatch-container{margin-top:18vh}
+  #clock{width:90%}
+  #clock a{font-size:18px}
+  #stopwatch-controls button{padding:10px 14px;font-size:16px}
 }
