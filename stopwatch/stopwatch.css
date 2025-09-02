@@ -23,8 +23,13 @@ body {
 #title {
     text-align: center;
     font-size: 4rem;
-    color: aliceblue;
+    color: #fff;
     margin: 0;
+}
+i {
+    font-size: 4rem;
+    margin-left: 10px;
+    color: rgba(240, 248, 255, 0.76);
 }
 
 #clock-container {
@@ -46,7 +51,7 @@ body {
     font-family: cursive;
     font-size: 20px;
     text-align: center;
-    color: white;
+    color: #fff;
 }
 #clock:hover {
     background-color: rgba(38, 41, 44, 0.205);
@@ -62,7 +67,7 @@ body {
     font-family: cursive;
     font-size: 6rem;
     text-align: center;
-    color: white;
+    color: #fff;
     background-color: rgba(99, 110, 121, 0.205);
     backdrop-filter: blur(3px);
     border-radius: 10px;
@@ -78,7 +83,7 @@ body {
 }
 
 #stopwatch-controls button {
-    color: aliceblue;
+    color: #fff;
     background-color: rgba(99, 110, 121, 0.205);
     backdrop-filter: blur(3px);
     border-radius: 10px;
@@ -89,4 +94,13 @@ body {
 #stopwatch-controls button:hover{
     background-color: rgba(38, 41, 44, 0.205);
     cursor: pointer;
+}
+
+/* Mobile tweaks */
+@media(max-width:480px){
+  #title{font-size:12vw}
+  #stopwatch{font-size:18vw;width:95%}
+  #stopwatch-container{margin-top:20vh}
+  #clock{width:80%}
+  #stopwatch-controls button{padding:8px 12px;font-size:14px}
 }

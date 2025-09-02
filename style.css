@@ -5,22 +5,32 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
+    font-family: cursive;
 }
-#date-container {
+#title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
-}
-#date {
-    font-family: cursive;
-    font-size: 2.5rem;
-    text-align: center;
-    color: white;
-    background-color: rgba(38, 41, 44, 0.205);
+    gap: 10px;
+    margin: 20px auto; 
+    background-color: rgba(99, 110, 121, 0.205);
     backdrop-filter: blur(3px);
     border-radius: 10px;
-    padding: 0px 8px;
+    border: none;
+    padding: 10px 20px;
+    max-width: 80%;  
+}
+
+#title {
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+}
+i {
+    font-size: 5rem;
+    margin-left: 10px;
+    color: rgba(240, 248, 255, 0.76);
+
 }
 #stopwatch-container {
     display: flex;
@@ -41,7 +51,7 @@ body {
     font-family: cursive;
     font-size: 20px;
     text-align: center;
-    color: white;
+    color: #fff;
 }
 #stopwatch:hover {
     background-color: rgba(38, 41, 44, 0.205);
@@ -51,17 +61,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 82vh;
+    margin-top: 32vh;
 }
 #clock {
-    font-family: cursive;
     font-size: 6rem;
     text-align: center;
-    color: white;
+    color: #fff;
     background-color: rgba(99, 110, 121, 0.205);
     backdrop-filter: blur(3px);
     border-radius: 10px;
     padding: 5px;
     width: 75%;
 }
+#date-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
+}
+#date {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(38, 41, 44, 0.205);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 0 8px;
+}
+
+/* Mobile tweaks */
+@media(max-width:480px){
+  #title{font-size:12vw}
+  #date{font-size:6vw}
+  #clock{font-size:18vw;width:95%}
+  #clock-container{margin-top:20vh}
+  #stopwatch{width:70%}
+  #stopwatch a{font-size:16px}
+}

@@ -1,0 +1,21 @@
+# AGENTS.md
+- Project: static HTML/CSS/JS digital clock and stopwatch; no backend, package manager, or tests.
+- Structure: [index.html](file:///d:/Zeina's/projects/Digital clock/index.html), [script.js](file:///d:/Zeina's/projects/Digital clock/script.js), [style.css](file:///d:/Zeina's/projects/Digital clock/style.css), plus [stopwatch.html](file:///d:/Zeina's/projects/Digital clock/stopwatch/stopwatch.html), [stopwatch.js](file:///d:/Zeina's/projects/Digital clock/stopwatch/stopwatch.js), [stopwatch.css](file:///d:/Zeina's/projects/Digital clock/stopwatch/stopwatch.css).
+- Run/build: no build step; open [index.html](file:///d:/Zeina's/projects/Digital clock/index.html) in a browser; any static server also works.
+- Windows quick-run: PowerShell example → `Start-Process "index.html"` (opens default browser).
+- Lint: not configured. Optionally add HTMLHint/Stylelint/ESLint if needed; otherwise rely on manual review.
+- Tests: none present; single-test command N/A. Validate behavior manually in browser.
+- Internal APIs: direct DOM access only; no modules or frameworks; scripts loaded via `<script src>` in HTML.
+- Data/storage: none (no DB, network calls); state is in-memory timers.
+- Clock: [script.js](file:///d:/Zeina's/projects/Digital clock/script.js) updates time/date each second; 12‑hour with AM/PM; writes to `#clock` and `#date`.
+- Stopwatch: [stopwatch.js](file:///d:/Zeina's/projects/Digital clock/stopwatch/stopwatch.js) exposes `start()`, `pause()`, `reset()`; called via inline `onclick` in [stopwatch.html](file:///d:/Zeina's/projects/Digital clock/stopwatch/stopwatch.html).
+- CSS: translucent cards, centered layout; IDs/classes in kebab‑case (e.g., `#clock-container`).
+- JS style: prefer lowerCamelCase for vars/functions; globals are acceptable here (two pages) but keep surface minimal.
+- Formatting: 2‑space indent; include semicolons; template literals allowed; prefer double quotes for consistency.
+- Naming: DOM IDs use kebab‑case; files use lowercase with dashes where applicable.
+- Error handling: minimal; guard `document.getElementById(...)` usages if elements may be missing.
+- Accessibility: avoid nested interactive elements (e.g., `<a>` inside `<button>`); prefer one interactive role per control.
+- Performance: timers use `setInterval` (1s for clock, 10ms for stopwatch); clear intervals when pausing/resetting.
+- Security: no user input; no secrets; static assets only.
+- Rules files: none detected (Cursor, Claude, Windsurf, Cline, Goose, Copilot instructions).
+- Version control: keep commits small and focused; no binary diffs for images unless necessary.

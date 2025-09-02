@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stopwatch.css">
-    <title>StopWatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Ticks — Stopwatch</title>
 </head>
 <body>
-    <div id="title-container"><div id="title">StopWatch</div></div>
+    <div id="title-container">
+        <div id="title">Ticks</div>
+        <i class="fa-regular fa-hourglass"></i>
+    </div>
+
+
     <div id="clock-container">
         <button id="clock"><a href="../index.html">Clock</a></button>
     </div>
+
+
     <div id="stopwatch-container">
         <div id="stopwatch">00:00:00</div>
     </div>
@@ -19,6 +27,7 @@
         <button id="stop" onclick="pause()">Pause</button>
         <button id="reset" onclick="reset()">Reset</button>
     </div>
+
     <script src="stopwatch.js"></script>
 </body>
 </html>
