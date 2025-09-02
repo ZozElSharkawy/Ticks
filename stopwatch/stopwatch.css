@@ -1,0 +1,92 @@
+body {
+    background-image: url(../bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: cursive;
+    margin: 0;
+}
+#title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+    background-color: rgba(99, 110, 121, 0.205);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    max-width: 80%;  
+}
+
+#title {
+    text-align: center;
+    font-size: 4rem;
+    color: aliceblue;
+    margin: 0;
+}
+
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+#clock {
+    background-color: rgba(99, 110, 121, 0.205);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: none;
+    padding: 0px 8px;
+    width: 20%;
+}
+#clock a {
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+#clock:hover {
+    background-color: rgba(38, 41, 44, 0.205);
+    cursor: pointer;
+}
+#stopwatch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32vh;
+}
+#stopwatch {
+    font-family: cursive;
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(99, 110, 121, 0.205);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 5px;
+    width: 75%;
+}
+
+#stopwatch-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#stopwatch-controls button {
+    color: aliceblue;
+    background-color: rgba(99, 110, 121, 0.205);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+#stopwatch-controls button:hover{
+    background-color: rgba(38, 41, 44, 0.205);
+    cursor: pointer;
+}
