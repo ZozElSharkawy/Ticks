@@ -8,8 +8,9 @@ function UpdateClock() {
   hours = hours % 12 || 12; // convert to 12-hour format
   hours = hours.toString().padStart(2, '0');
 
-  const timeString = `${hours}:${minutes}:${seconds}\u00A0${ampm}`;
-  document.getElementById('clock').textContent = timeString;
+  const timeString = `${hours}:${minutes}:${seconds}`;
+  const clockEl = document.getElementById("clock");
+  if (clockEl) clockEl.innerHTML = `${timeString}<span class="ampm">${ampm}</span>`;
 
   
  const options = { weekday: 'long', year: 'numeric', month: 'numeric', day: 'numeric' };

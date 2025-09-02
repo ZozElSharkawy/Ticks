@@ -80,7 +80,8 @@ i {
     user-select: none;
     -webkit-user-select: none;
 }
-#clock{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#clock .ampm{font-size:.5em;margin-left:.25em}
+#clock{white-space:nowrap}
 #date-container {
     display: flex;
     justify-content: center;
