@@ -96,7 +96,7 @@ i {
   #title{font-size:16vw}
   #date{font-size:9vw}
   #clock{font-size:20vw;width:100%;white-space:nowrap}
-  #clock-container{margin:18vh 10px}
+  #clock-container{margin-top:18vh}
   #stopwatch{width:75%}
   #stopwatch a{font-size:18px}
 }

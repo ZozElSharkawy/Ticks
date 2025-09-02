@@ -102,7 +102,7 @@ i {
   #title{font-size:16vw}
   #date{font-size:9vw}
   #stopwatch{font-size:20vw;width:100%;white-space:nowrap}
-  #stopwatch-container{margin:18vh 10px}
+  #stopwatch-container{margin-top:18vh}
   #clock{width:90%}
   #clock a{font-size:18px}
   #stopwatch-controls button{padding:10px 14px;font-size:16px}
